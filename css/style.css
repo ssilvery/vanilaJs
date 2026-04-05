@@ -1,0 +1,338 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  font-size: 14px;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+  color: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  line-height: 1.4;
+  overflow-y: auto;
+}
+.hidden {
+  display: none;
+}
+
+header {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 60px auto 0;
+  padding-bottom: 60px;
+  width: 80%;
+  max-width: 980px;
+}
+
+input {
+  color: #fff;
+}
+
+.input{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;  
+  position: relative;
+}
+
+.input label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #fff;
+}
+
+.input.line {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  border-radius: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Clock */
+#clock {
+  text-align: center;
+}
+
+/* Weather */
+#weather {
+  text-align: right;
+}
+
+#weather span:first-child {
+  position: relative;
+  padding-left: 25px;
+}
+
+.weather-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Quote */
+#quote {
+  margin: 40px 0 20px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.bubble {
+  display: inline-block;
+}
+
+#quote::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 95%;
+  transform: translateX(-95%);
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.35) transparent transparent transparent;
+}
+
+#quote h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#quote span {
+  display: block;
+  margin-top: 4px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* login */
+#login-form {
+  margin-top: 80px;
+}
+
+#login-form input {
+  flex: 1 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+#greeting {
+  margin: 60px 0 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Todo List */
+#todo-wrap {
+  margin-top: 80px;
+}
+
+#todo-form input {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+}
+#todo-list {
+  margin-top: 40px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  margin-bottom: 10px;
+}
+#todo-list li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+#todo-list li span {
+  color: #fff;
+  font-size: 16px;
+}
+#todo-list li button {
+  color: rgba(0, 0, 0, 0.3);
+}
+#todo-list li button:hover {
+  color: rgba(0, 0, 0, 0.7);
+}

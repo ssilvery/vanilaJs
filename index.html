@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <!-- 시간 -->
+    <div id="clock"></div>
+  
+    <!-- 날씨 -->
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section>
+    
+    <!-- 명언 -->
+    <div id="quote">
+      <div class="bubble">
+        <h4></h4>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- 로그인 -->
+    <form id="login-form" class="hidden">
+      <div class="input">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="이름을 입력하세요" required />
+        <button class="btn">Login</button>
+      </div>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+  
+    <!-- 할 일 -->
+    <div id="todo-wrap">
+      <form id="todo-form">
+        <div class="input line">
+          <label for="todo">할 일</label>
+          <input type="text" id="todo" placeholder="할 일을 입력하세요" required />
+        </div>
+      </form>
+      <ul id="todo-list" class="hidden"></ul>
+    </div>
+  </section>
+
+  <script src="js/background.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quotes.js"></script>
+</body>
+</html>
